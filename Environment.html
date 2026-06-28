@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment | Helping Hands NGO</title>
+
+    <link rel="stylesheet" href="../CSS/Environment.css">
+</head>
+
+<body>
+    <nav>
+        <a href="Home.html" class="home-btn">
+            🏠 Home
+        </a>
+        <a href="Education.html" class="logo-link">
+            🎓 Education  
+        </a>
+        <a href="Healthcare.html" class="logo-link">
+            ❤️‍🩹 Healthcare
+        </a>
+        <a href="Helping-Orphanages.html" class="logo-link">
+            👧🏻 Helping Orphanages
+        </a>
+        <a href="Financial-Literacy.html" class="logo-link">
+            🏦 Financial Literacy
+        </a>
+        <a href="Animals.html" class="home-btn">
+            🐮 Animal Welfare
+        </a>
+        <a href="Contact.html" class="home-btn">
+            📞 Contact Us
+        </a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                🌍 Protect Nature, Preserve The Future
+            </h1>
+            <p>
+                Together we can create a greener, cleaner and healthier world for future generations.
+            </p>
+            <button onclick="openGreenPopup()">
+                🌱 Join Green Mission
+            </button>
+        </div>
+    </section>
+
+    <section class="mission">
+        <h2>🌳 Our Mission</h2>
+        <p>
+            Helping Hands works to protect nature
+            through tree plantation drives,
+            clean-up campaigns and environmental education.
+        </p>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h3>🌱 Tree Plantation</h3>
+            <p>
+                Planting trees to build greener communities.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>♻️ Clean-Up Drives</h3>
+            <p>
+                Keeping our surroundings clean and healthy.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💧 Water Conservation</h3>
+
+            <p>
+                Encouraging responsible water usage.
+            </p>
+        </div>
+    </section>
+
+    <section class="impact">
+        <h2>🌍 Our Impact</h2>
+        <div class="stats">
+            <div class="stat">
+                <h1 id="treeCount">0</h1>
+                <p>Trees Planted</p>
+            </div>
+            <div class="stat">
+                <h1 id="volunteerCount">0</h1>
+                <p>Volunteers</p>
+            </div>
+            <div class="stat">
+                <h1 id="driveCount">0</h1>
+                <p>Clean-Up Drives</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <h2>📸 Protecting Our Planet</h2>
+        <div class="gallery-container">
+            <img src="../IMAGES/environment1.jpg">
+            <img src="../IMAGES/environment2.jpg">
+            <img src="../IMAGES/environment3.jpg">
+            <img src="../IMAGES/environment4.png">
+        </div>
+    </section>
+
+    <section class="support">
+        <h2>🤝 Become An Eco Volunteer</h2>
+        <p>
+            Join our green team and help protect nature.
+        </p>
+        <button class="btn" onclick="openVolunteerPopup()">
+            Join Now 💛
+        </button>
+    </section>
+
+    <footer>
+        <p>
+            © 2026 Helping Hands NGO
+        </p>
+    </footer>
+
+    <div id="volunteerPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeVolunteerPopup()">
+                &times;
+            </span>
+            <h2>🌱 Join The Green Team</h2>
+            <input type="text" placeholder="Your Name">
+            <input type="tel" placeholder="Phone Number">
+            <a href="https://chat.whatsapp.com/INNDAycMQcN6G53BeuFwp3" target="_blank" class="btn">
+                Become A Volunteer 💛
+            </a>
+        </div>
+    </div>
+
+    <script src="../JS/Environment.js"></script>
+</body>
+</html>

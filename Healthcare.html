@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare - Helping Hands NGO</title>
+    <link rel="stylesheet" href="../CSS/Healthcare.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <a href="Home.html" class="home-btn">
+            🏠 Home
+        </a>
+        <a href="Education.html" class="logo-link">
+            🎓 Education
+        </a>
+        <a href="Animals.html" class="logo-link">
+            🐮 Animal Welfare
+        </a>
+        <a href="Helping-Orphanages.html" class="logo-link">
+            👧🏻 Helping Orphanages
+        </a>
+        <a href="Financial-Literacy.html" class="logo-link">
+            🏦 Financial Literacy
+        </a>
+        <a href="Environment.html" class="home-btn">
+            🌍 Environment
+        </a>
+        <a href="Contact.html" class="home-btn">
+            📞 Contact Us
+        </a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>❤️ Healthcare For Everyone</h1>
+            <p>
+                Providing free medical camps, essential medicines,
+                health awareness programs, and emergency healthcare
+                support to underprivileged communities.
+            </p>
+
+            <a href="#programs" class="btn">
+                💖 Support Healthcare
+            </a>
+        </div>
+    </section>
+
+    <!-- Programs -->
+    <section class="health-tips">
+        <h2>💡 Daily Health Tips</h2>
+
+        <div class="tips-container">
+            <div class="tip-card">
+                <h3>🥗 Eat Healthy</h3>
+                <p>Include fruits, vegetables and nutritious meals in your diet.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>💧 Stay Hydrated</h3>
+                <p>Drink at least 8 glasses of water every day.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>🏃 Stay Active</h3>
+                <p>Exercise regularly to maintain a healthy lifestyle.</p>
+            </div>
+
+            <div class="tip-card">
+                <h3>😴 Get Enough Sleep</h3>
+                <p>Sleep 7-8 hours daily for better physical and mental health.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="emergency-banner">
+
+        <h2>🚑 Emergency Medical Support</h2>
+
+        <p>
+            Need urgent healthcare assistance? Our volunteers are ready to help.
+        </p>
+
+        <button class="emergency-btn" onclick="openPopup()">
+            📞 Get Help Now
+        </button>
+
+    </section>
+
+     <footer>
+        <p>
+            © 2026 Helping Hands NGO
+        </p>
+    </footer>
+
+    <!-- POPUP -->
+    <div id="helpPopup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+
+            <h2>🚑 Emergency Help Request</h2>
+
+            <input type="text" placeholder="Your Address" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <button class="submit-btn">Submit Request</button>
+
+        </div>
+
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById("helpPopup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("helpPopup").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

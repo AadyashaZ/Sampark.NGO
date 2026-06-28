@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #ffe7c3;
+    color: #333;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background: #c2a837;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.logo {
+
+    height: 60px;
+
+}
+
+/* HERO */
+.hero {
+
+    height: 500px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .35),
+            rgba(0, 0, 0, .35)),
+
+        url("https://images.unsplash.com/photo-1509062522246-3755977927d7") center/cover;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+}
+
+.hero-content {
+
+    max-width: 700px;
+
+}
+
+.hero h1 {
+
+    font-size: 60px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        0 0 15px rgb(255, 196, 0);
+
+}
+
+.hero p {
+
+    font-size: 22px;
+
+    margin-bottom: 30px;
+
+}
+
+.hero button {
+    background: #ff8800;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero button:hover {
+    transform: scale(1.08);
+    box-shadow:
+        0 0 20px rgb(255, 153, 0);
+}
+
+/* MISSION */
+.mission {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.mission h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.mission p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px;
+}
+
+.card {
+
+    width: 280px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: .3s;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, .12);
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 0 25px rgb(255, 166, 0);
+
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+/* IMPACT */
+.impact {
+    background: #ffb85c;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.impact-box h1 {
+    font-size: 55px;
+}
+
+.impact-box p {
+    font-size: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #6d2f07;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* MOBILE */
+@media(max-width:768px) {
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .impact {
+        gap: 40px;
+    }
+}
+
+.success-story {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.story-box {
+    background: white;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.approach {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.step {
+    background: white;
+    width: 250px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.gallery {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.gallery-container img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.donate-books {
+    background: #ffdead;
+    text-align: center;
+    padding: 80px 20px;
+    margin: 60px auto;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.donate-books button {
+    margin-top: 25px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    background: white;
+    padding: 30px;
+    width: 450px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+.popup-content input,
+.popup-content textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.popup-content button {
+    background: #ffae00;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close {
+    float: right;
+    font-size: 30px;
+    cursor: pointer;
+}

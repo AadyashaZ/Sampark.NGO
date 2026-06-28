@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #e0e0db;
+    color: #333;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85px;
+    background: #c2a837;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.nav-links a:hover {
+    color: #ff9800;
+}
+
+.logo {
+    height: 60px;
+}
+
+.hero {
+    height: 450px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .45),
+            rgba(0, 0, 0, .45)),
+        url("https://images.unsplash.com/photo-1517048676732-d65bc937f952") center/cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgb(165, 164, 159);
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background: #504e43;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 70px 20px;
+}
+
+.card {
+    width: 250px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgb(0, 0, 0);
+}
+
+.contact-form {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    max-width: 700px;
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.form-box input,
+.form-box textarea {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin: 10px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+}
+
+.form-box textarea {
+
+    height: 150px;
+
+    resize: none;
+}
+
+.form-box button {
+    margin-top: 15px;
+    background: #4b4940;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.follow-us h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.follow-us p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.follow-us{
+    width: 400 px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+    transition: .3s;
+    line-gap-override: 100 px;
+}
+
+.facebook-btn {
+    display: inline-block;
+    background: #2a2b2c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.facebook-btn:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background: #313131;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

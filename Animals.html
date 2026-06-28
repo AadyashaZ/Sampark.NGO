@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal Welfare | Helping Hands</title>
+
+    <link rel="stylesheet" href="../CSS/Animals.css">
+</head>
+
+<body>
+    <nav>
+        <a href="Home.html" class="home-btn">
+            🏠 Home
+        </a>
+        <a href="Education.html" class="logo-link">
+            🎓 Education
+        </a>
+        <a href="Healthcare.html" class="logo-link">
+            ❤️‍🩹 Healthcare
+        </a>
+        <a href="Helping-Orphanages.html" class="logo-link">
+            👧🏻 Helping Orphanages
+        </a>
+        <a href="Financial-Literacy.html" class="logo-link">
+            🏦 Financial Literacy
+        </a>
+        <a href="Environment.html" class="home-btn">
+            🌍 Environment 
+        </a>
+        <a href="Contact.html" class="home-btn">
+            📞 Contact Us
+        </a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>
+                Every Paw Matters 🐾
+            </h1>
+
+            <p>
+                Helping abandoned, injured
+                and homeless animals find
+                safety, care and love.
+            </p>
+            
+            <button class="btn" onclick="openVolunteerPopup()">
+                Help An Animal ❤️
+            </button>
+        </div>
+    </section>
+
+    <section class="mission">
+
+        <h2>🐶 Our Mission</h2>
+
+        <p>
+
+            Helping Hands works to rescue,
+            rehabilitate and rehome animals
+            in need while promoting kindness
+            toward all living creatures.
+
+        </p>
+
+    </section>
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>🐶 Rescue</h3>
+
+            <p>
+
+                Rescuing animals from
+                unsafe situations.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🏠 Shelter</h3>
+
+            <p>
+
+                Providing temporary homes
+                and protection.
+
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>🩺 Medical Care</h3>
+
+            <p>
+
+                Treatment and vaccinations
+                for animals.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="impact">
+
+        <h2>🌟 Our Impact</h2>
+
+        <div class="stats">
+
+            <div class="stat">
+
+                <h1 id="animalCount">0</h1>
+
+                <p>Animals Rescued</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h1 id="volunteerCount">0</h1>
+
+                <p>Volunteers</p>
+
+            </div>
+
+            <div class="stat">
+
+                <h1 id="adoptionCount">0</h1>
+
+                <p>Adoptions</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <h2>📸 Happy Tails</h2>
+        <div class="gallery-container">
+            <img src="../IMAGES/animal1.jpg">
+            <img src="../IMAGES/animal2.jpg">
+            <img src="../IMAGES/animal3.jpg">
+            <img src="../IMAGES/animal4.avif">
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Helping Hands NGO
+    </footer>
+
+    <div id="volunteerPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+
+            <h2>
+                🐾 Join Animal Welfare Team
+            </h2>
+
+            <input type="text" placeholder="Your Name">
+            <input type="tel" placeholder="Phone Number">
+
+        <button class="btn" onclick="submitVolunteer()">
+            Become An Animal Hero 🐾
+        </button>
+        </div>
+    </div>
+
+    <script src="../JS/Animals.js"></script>
+</body>
+</html>
